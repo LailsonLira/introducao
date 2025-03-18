@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>arquivo.jsx</script>
+    <title>Document</title>
+</head>
+<body>
+    <StyledWrapper>
+      <ul className="example-2">
+        <li className="icon-content">
+          <Link to="/home" data-social="spotify" aria-label="home">
+            <div className="filled" />
+            <IoHome size={24} /> {/* Aumentei o tamanho para melhor visibilidade */}
+          </Link>
+          <div className="tooltip">Home</div>
+        </li>
+        <li className="icon-content">
+          <Link to="/festas" data-social="pinterest" aria-label="festas">
+            <div className="filled" />
+            <GiPartyPopper size={24} /> {/* Aumentei o tamanho */}
+          </Link>
+          <div className="tooltip">Festas</div> {/* Corrigi de "estas" para "Festas" */}
+        </li>
+        <li className="icon-content">
+          <a
+            data-social="dribbble"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/djmoises.ps"
+          >
+            <div className="filled" />
+            <AiFillInstagram size={24} /> {/* Aumentei o tamanho */}
+          </a>
+          <div className="tooltip">Instagram</div>
+        </li>
+        <li className="icon-content">
+          <a
+            data-social="telegram"
+            aria-label="WhatsApp"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://wa.me/5551991454337"
+          >
+            <div className="filled" />
+            <IoLogoWhatsapp size={24} /> {/* Aumentei o tamanho */}
+          </a>
+          <div className="tooltip">WhatsApp</div>
+        </li>
+      </ul>
+    </StyledWrapper>
+  );
+};
+</body>
+</html>
